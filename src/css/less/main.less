@@ -26,3 +26,51 @@ header{
 		}
 	}
 }
+footer{
+	width: 100%;
+	margin: 10px 0 0 0;
+	padding: 15px 10px;
+	background-color: @footer-grey;
+	color: #fff;
+	border-top: solid 1px #fff;
+}
+//individual feed item styles in a loop
+.article-loop{
+	display: block;
+	overflow: hidden;
+	a{
+		&.post-thumb{
+			display: block;
+			position: relative;
+			border: 5px solid #000;
+    		box-sizing: border-box;
+    		&:before{
+    			display: block;
+    			content: "";
+    			position: absolute;
+    			top: -10px;
+    			left: -30px;
+    			width: 0;
+    			height: 0;
+    			transform: rotate(135deg);
+    			border-left: 40px solid transparent;
+    			border-right: 40px solid transparent;
+    			border-top: 40px solid #000;
+    		}
+    		&:after{
+    			display: block;
+    			content: "";
+    			position: absolute;
+    			bottom: -10px;
+    			right: -30px;
+    			width: 0;
+    			height: 0;
+    			transform: rotate(-45deg);
+    			border-left: 40px solid transparent;
+    			border-right: 40px solid transparent;
+    			border-top: 40px solid #000;
+    		}
+		}
+		
+	}
+}
