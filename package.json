@@ -1,0 +1,19 @@
+{
+  "name": "ab-test",
+  "version": "1.0.0",
+  "description": "Testing first grunt powered project",
+  "devDependencies": {
+  	"grunt": "~0.4.4",
+  	"grunt-autoprefixer": "^0.8.2",
+  	"grunt-contrib-cssmin": "latest",
+  	"jpegtran-bin": "0.2.0",
+  	"grunt-contrib-imagemin": "latest",
+  	"grunt-contrib-concat": "latest",
+  	"grunt-contrib-jshint": "latest",
+  	"grunt-contrib-less": "latest",
+  	"grunt-contrib-uglify": "latest",
+  	"grunt-contrib-watch": "latest",
+  	"grunt-newer": "^0.7.0",
+  	"jshint-stylish": "latest"
+  }
+}

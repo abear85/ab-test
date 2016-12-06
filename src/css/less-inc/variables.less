@@ -1,0 +1,53 @@
+//site wide variables
+@screen-xs: 320px;
+@screen-sm: 768px;
+@screen-sm-min: 767px;
+@screen-md: 992px;
+@screen-md-min: 991px;
+@screen-lg: 1280px;
+@screen-lg-min: 1279px;
+
+//Fonts
+@julius-font: 'Julius Sans One', sans-serif; //all titles h1 - h6
+@raleway-font: 'Raleway', sans-serif; //p fonts
+@oswald-font: 'Oswald', sans-serif; //logo font
+
+@julius-font-reg: 400;
+
+@raleway-font-reg: 400;
+@raleway-font-med: 500;
+
+@oswald-font-light: 300;
+@oswald-font-reg: 400;
+
+//colors
+@site-grey: #e0e0e0;
+html{ font-size: 13px; }
+.container-fluid{ max-width: @screen-lg; }
+
+h1, h2, h3, h4, h5, h6{
+	// font-family: @julius-font;
+	// font-weight: @julius-font-reg;
+	font-family: @oswald-font;
+	font-weight: @oswald-font-reg;
+	margin:10px 0;
+	padding: 0;
+}
+img{ width: 100%; }
+a{
+	color: #fff;
+	&:hover{ color: #fff; text-decoration: none;}
+	&:active{ color: #fff; text-decoration: none;}
+	&:focus{ color: #fff; text-decoration: none;}
+}
+div, span, p, a, ul{
+	font-family: @oswald-font;
+	font-weight: @oswald-font-light;
+}
+//mixins
+.font-size(@sizeValue) {
+  @remValue: (@sizeValue / 13);
+  @pxValue: (@sizeValue * 1);
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+}
